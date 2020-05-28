@@ -48,7 +48,6 @@ function App() {
   runningRef.current = running;
 
   const runSimulation = useCallback(() => {
-    // const speed = modifiers.speed;
     setGrid((g) => {
       return produce(g, (gridCopy) => {
         for (let i = 0; i < numRows; i++) {
@@ -81,7 +80,6 @@ function App() {
   }, [modifiers.speed]);
 
   const updateModifiers = e => {
-    // console.log(e.target, e.target.value)
     setModifiers({...modifiers, [e.target.name]: Number(e.target.value)})
   }
 
