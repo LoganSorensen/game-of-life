@@ -1,9 +1,9 @@
 import React, { useState, useCallback, useRef } from "react";
 import produce from "immer";
 
-import Rules from "./components/rules";
-import Controls from "./components/controls";
 import About from "./components/about";
+import Controls from "./components/controls";
+// import About fro./components/aboutOldout";
 
 import "./styles/less/index.less";
 
@@ -89,6 +89,7 @@ function App() {
 
   return (
     <>
+    <h1>Conway's Game of Life</h1>
       <div className="main-section">
         <div className="grid-container">
           <div className='grid-top'>
@@ -172,10 +173,8 @@ function App() {
           </div>
         </div>
         </div>
-        
-        <Rules />
+        <About />
       </div>
-      <About />
     </>
   );
 }
