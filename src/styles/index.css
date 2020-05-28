@@ -1,20 +1,210 @@
-.grid {
-  width: 40%;
-  display: flex;
-  flex-wrap: wrap;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-.grid canvas {
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  cursor: pointer;
+}
+.main-section {
+  display: flex;
+  padding: 0 10%;
+}
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 2rem;
+  padding: 1%;
+  outline: none;
+  width: 30%;
+}
+.grid-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2%;
+}
+h2 {
+  font-size: 3rem;
+}
+.grid-container {
+  margin: 5% 10%;
+}
+.grid-container .generation-counter {
+  text-align: center;
+}
+.grid-container .grid {
   border: 1px solid black;
   width: 100%;
 }
-.grid div {
-  width: 3.73%;
-  height: 2vh;
-  border: 1px solid black;
+.grid-container .btn-container {
+  display: flex;
+  justify-content: space-evenly;
 }
-.grid .alive {
-  background-color: white;
+.grid-container .btn-container button {
+  margin-top: 2%;
 }
-.grid .dead {
-  background-color: black;
+.rules {
+  margin-top: 5%;
+  width: 30%;
+}
+.rules .rules-list {
+  list-style-type: disc;
+}
+.rules .rules-list li {
+  margin: 3%;
+  font-size: 2rem;
+}
+.about-section {
+  text-align: center;
+}
+.modifiers {
+  margin-top: 2%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.modifiers .modifier {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 13%;
+}
+.modifiers .modifier input,
+.modifiers .modifier select {
+  margin-right: 15%;
+}
+.modifiers .modifier input {
+  width: 25%;
+}
+.modifiers .modifier select {
+  width: 25.8%;
 }

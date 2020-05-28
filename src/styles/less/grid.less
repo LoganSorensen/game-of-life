@@ -1,25 +1,90 @@
-.grid {
-    width: 40%;
-    // width: 50%;
-    // border: 1px solid red;
+.main-section {
+  display: flex;
+  padding: 0 10%;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 2rem;
+  padding: 1%;
+  outline: none;
+  width: 30%;
+}
+
+.grid-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.grid-container {
+  margin: 5% 10%;
+
+  .generation-counter {
+    text-align: center;
+  }
+
+  .grid {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .btn-container {
     display: flex;
-    flex-wrap: wrap;
-    canvas {
-        border: 1px solid black;
-        width: 100%;
+    justify-content: space-evenly;
+
+    button {
+      margin-top: 2%;
     }
-    div {
-        width: 3.73%;
-        // width: 4%;
-        height: 2vh;
-        border: 1px solid black;
+  }
+}
+
+.rules {
+  margin-top: 5%;
+  width: 30%;
+
+  .rules-list {
+    list-style-type: disc;
+    li {
+      margin: 3%;
+      font-size: 2rem;
+    }
+  }
+}
+
+.about-section {
+  text-align: center;
+}
+
+.modifiers {
+  margin-top: 2%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  .modifier {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 13%;
+
+    input, select {
+        margin-right: 15%;
     }
 
-    .alive {
-        background-color: white;
+    input {
+      width: 25%;
     }
 
-    .dead {
-        background-color: black;
+    select {
+      width: 25.8%;
     }
+  }
 }
