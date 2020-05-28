@@ -7,7 +7,7 @@ import Controls from "./components/controls";
 
 import "./styles/less/index.less";
 
-const numRows = 40;
+const numRows = 50;
 const numCols = 50;
 let generation = 0;
 
@@ -37,7 +37,7 @@ function App() {
 
   const [modifiers, setModifiers] = useState({
     population: 50,
-    speed: 1000,
+    speed: 500,
   })
 
   const [cellSize, setCellSize] = useState(10);
@@ -130,8 +130,8 @@ function App() {
                   style={{
                     width: cellSize,
                     height: cellSize,
-                    backgroundColor: grid[i][k] ? "black" : undefined,
-                    border: "1px solid white",
+                    backgroundColor: grid[i][k] ? "white" : undefined,
+                    // border: "1px solid black",
                   }}
                 />
               ))
@@ -167,7 +167,7 @@ function App() {
           </div>
           <div className='modifier'>
           <span>Simulation Speed in ms</span>
-          <input type='number' name='speed' placeholder='1000' onChange={updateModifiers}></input>
+          <input type='number' name='speed' placeholder={modifiers.speed} onChange={updateModifiers}></input>
           </div>
         </div>
         </div>

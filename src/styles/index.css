@@ -186,6 +186,7 @@ h2 {
 .grid-container .grid {
   border: 1px solid black;
   width: 100%;
+  background-color: black;
 }
 .grid-container .btn-container {
   display: flex;
