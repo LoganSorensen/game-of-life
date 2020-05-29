@@ -3,7 +3,6 @@ import produce from "immer";
 
 import About from "./components/about";
 import Controls from "./components/controls";
-// import About fro./components/aboutOldout";
 
 import "./styles/less/index.less";
 
@@ -131,7 +130,7 @@ function App() {
                     width: cellSize,
                     height: cellSize,
                     backgroundColor: grid[i][k] ? "white" : undefined,
-                    // border: "1px solid black",
+
                   }}
                 />
               ))
